@@ -6,62 +6,227 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frontis es una clínica capilar integral especializada en diagnóstico y tratamiento de la caída del cabello. Agendá tu consulta gratuita, presencial u online, con nuestros especialistas.">
   <title>Frontis | Consulta capilar</title>
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/testimonials-block.css" />
 </head>
 
 <body>
 
-  <!-- Header -->
+  <!-- Header (banner fijo) -->
   <header class="site-header">
     <img src="assets/img/frontis-logo.png" alt="Frontis Clínica Capilar Integral" />
   </header>
 
-  <main class="container">
+  <main>
 
-    <!-- HERO + VIDEO -->
+    <!-- HERO + VIDEO (núcleo de la oferta) - full width -->
     <section class="hero-block">
 
-      <section class="hero-text">
-        <span class="eyebrow">Clínica capilar</span>
-        <h1>
-          Recuperá tu cabello,<br />
-          <strong>recuperá tu confianza</strong>
-        </h1>
-      </section>
+      <div class="hero-layout">
+        <section class="hero-text">
+          <span class="eyebrow">Clínica capilar de alta especialización</span>
+          <h1>
+            Recupera tu cabello,<br />
+            <strong>recupera tu confianza</strong>
+          </h1>
+          <p class="hero-subtitle">
+            Evaluación completa, diagnóstico profesional y un plan claro para volver a verte con pelo.
+          </p>
 
-      <section class="video-section">
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/h3C5DXJkYmU"
-            title="Presentación Frontis"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <div class="hero-trust">
+            <span class="trust-pill">+1.000 pacientes evaluados</span>
+          </div>
+
+          <section class="cta">
+            <a href="#agenda" class="cta-button">Reclamar consulta gratuita</a>
+            <p class="cta-note">
+              Cupos limitados por agenda médica · Consulta sin compromiso
+            </p>
+          </section>
+        </section>
+
+        <section class="video-section">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/h3C5DXJkYmU"
+              title="Presentación Frontis"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+    <!-- BLOQUE: PRUEBA SOCIAL / PACIENTES -->
+    <section class="testimonials-block">
+      <div class="section-heading">
+        <h2>Historias reales de personas que decidieron hacer algo hoy</h2>
+        <p>Esto es lo que cambia cuando dejás de esconderte bajo la gorra o el peinado de siempre.</p>
+      </div>
+
+      <div class="testimonials-carousel-wrapper">
+        <button class="testimonials-carousel-btn testimonials-carousel-btn--prev" aria-label="Testimonio anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="testimonials-items">
+        <div class="testimonial-pair">
+          <article class="testimonial">
+            <p class="testimonial-quote">
+              “Pensé que ya era tarde para mí. Hoy miro fotos de hace un año y no puedo creer el cambio. No solo de pelo:
+              en cómo camino, cómo hablo, cómo me presento en reuniones.”
+            </p>
+            <p class="testimonial-name">— Martín, 38 años</p>
+          </article>
+          <div class="before-after-image">
+            <img src="assets/img/antes-despues-1.jpg" alt="Resultado de trasplante capilar de Martín - antes y después" />
+          </div>
         </div>
-      </section>
 
-      <section class="cta">
-        <a href="#agenda" class="cta-button">Reclamar consulta gratuita</a>
+        <div class="testimonial-pair">
+          <article class="testimonial">
+            <p class="testimonial-quote">
+              “Lo que más me sorprendió fue la sinceridad. Me explicaron qué se podía lograr en mi caso y qué no. Eso me dio
+              confianza para avanzar sin miedo a ‘quedar raro’.”
+            </p>
+            <p class="testimonial-name">— Sebastián, 42 años</p>
+          </article>
+          <div class="before-after-image">
+            <img src="assets/img/antes-despues-2.jpg" alt="Resultado de trasplante capilar de Sebastián - antes y después" />
+          </div>
+        </div>
+
+        <div class="testimonial-pair">
+          <article class="testimonial">
+            <p class="testimonial-quote">
+              "Volví a sacarme fotos con mis hijos sin pensar desde qué ángulo salía. Parece un detalle, pero cambia todo."
+            </p>
+            <p class="testimonial-name">— Diego, 35 años</p>
+          </article>
+          <div class="before-after-image">
+            <img src="assets/img/antes-despues-3.jpg" alt="Resultado de trasplante capilar de Diego - antes y después" />
+          </div>
+        </div>
+
+        <div class="testimonial-pair">
+          <article class="testimonial">
+            <p class="testimonial-quote">
+              "Después de años evitando espejos y fotos, hoy me siento cómodo conmigo mismo. El proceso fue más simple de lo que imaginaba y los resultados superaron mis expectativas."
+            </p>
+            <p class="testimonial-name">— Carlos, 41 años</p>
+          </article>
+          <div class="before-after-image">
+            <img src="assets/img/antes-despues-1.jpg" alt="Resultado de trasplante capilar de Carlos - antes y después" />
+          </div>
+        </div>
+        <button class="testimonials-carousel-btn testimonials-carousel-btn--next" aria-label="Siguiente testimonio">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL EN CONTENEDOR -->
+    <div class="container">
+
+    <!-- BLOQUE: CÓMO ES LA CONSULTA -->
+    <section class="sales-section sales-process">
+      <div class="section-heading">
+        <h2>Qué pasa cuando agendás tu consulta</h2>
+        <p>Claridad, contención y cero presión para decidir. Así es el paso a paso.</p>
+      </div>
+
+      <ol class="process-steps">
+        <li>
+          <h3>1. Agendás el día y horario que mejor te quede</h3>
+          <p>
+            Elegís entre consulta online o presencial. Vas a recibir la confirmación y un recordatorio automático para que no se te pase.
+          </p>
+        </li>
+        <li>
+          <h3>2. Evaluación detallada de tu caso</h3>
+          <p>
+            Revisamos el estado actual de tu cabello, tu historia clínica y tus objetivos. Es el momento ideal para hacer todas
+            las preguntas que tenés en mente.
+          </p>
+        </li>
+        <li>
+          <h3>3. Te presentamos tu mejor estrategia</h3>
+          <p>
+            Te mostramos qué opciones tenés, beneficios, tiempos estimados y cuidados necesarios. Sin presiones, sin letra chica,
+            con total transparencia.
+          </p>
+        </li>
+        <li>
+          <h3>4. Decidís con tranquilidad</h3>
+          <p>
+            Podés decidir avanzar, pensarlo un tiempo o no hacerlo. La consulta en sí ya te deja con información valiosa para
+            toda la vida.
+          </p>
+        </li>
+      </ol>
+
+      <div class="cta secondary-cta">
+        <a href="#agenda" class="cta-button cta-button-secondary">
+          Ver horarios disponibles ahora
+        </a>
         <p class="cta-note">
-          Evaluación personalizada · Sin compromiso · Atención profesional
+          La mayoría de los pacientes reserva en menos de 2 minutos.
         </p>
-      </section>
+      </div>
+    </section>
 
+    <!-- BLOQUE: POR QUÉ AHORA -->
+    <section class="sales-section sales-urgency">
+      <div class="section-heading">
+        <h2>Cuanto antes actúes, más opciones tenés</h2>
+        <p>
+          La caída capilar es progresiva: cuanto más la dejás avanzar, menos densidad donante hay y más limitadas son las opciones.
+        </p>
+      </div>
+
+      <div class="urgency-grid">
+        <article class="urgency-card">
+          <h3>Protegé lo que todavía tenés</h3>
+          <p>
+            Un buen plan no solo busca “sumar pelo”, también frenar o enlentecer la caída actual para que no sigas perdiendo
+            terreno.
+          </p>
+        </article>
+        <article class="urgency-card">
+          <h3>Cupos acotados por agenda médica</h3>
+          <p>
+            Para garantizar la calidad y el seguimiento, solo tomamos una cantidad limitada de evaluaciones por semana.
+            Si hoy ves un horario disponible, lo ideal es reservarlo.
+          </p>
+        </article>
+      </div>
     </section>
 
     <!-- AGENDA -->
     <section class="agenda-block" id="agenda">
 
       <h2 class="section-title">
-        Agendá tu consulta gratuita<br />
-        <strong>online o presencial</strong>
+        Agendá ahora tu
+        <strong>evaluación capilar gratuita</strong>
       </h2>
+      <p class="section-subtitle">
+        Elegí el día y horario que mejor se adapte a tu rutina. Atendemos de forma presencial y online.
+      </p>
 
       <!-- Calendly inline widget begin -->
-      <div class="calendly-inline-widget" data-url="https://calendly.com/matiascapurro2002/prueba-frontis?hide_event_type_details=1" style="min-width:320px;height:700px;"></div>
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/frontisclinicacapilar/evaluacion-de-microtrasplante-capilar?hide_event_type_details=1"
+        style="min-width:320px;height:700px;"></div>
 
       <hr class="soft-divider" />
 
@@ -73,38 +238,85 @@
           rel="noopener">
           Comunicarme por WhatsApp
         </a>
+        <p class="whatsapp-note">
+          ¿Tenés dudas puntuales antes de reservar? Escribinos y te respondemos directamente por WhatsApp.
+        </p>
       </section>
 
     </section>
 
-    <section class="secondary-links">
-    <p class="secondary-title">También podés conocernos en:</p>
+    <!-- BLOQUE: FAQ -->
+    <section class="sales-section sales-faq">
+      <div class="section-heading">
+        <h2>Preguntas frecuentes</h2>
+        <p>Resolvemos las dudas más comunes antes de que agendes.</p>
+      </div>
 
-    <div class="secondary-actions">
-        <a
-        href="https://www.instagram.com/frontisclinicacapilar"
-        target="_blank"
-        rel="noopener"
-        class="secondary-link instagram"
-        >
-        Instagram
-        </a>
+      <div class="faq-carousel">
+        <button class="carousel-btn carousel-btn--prev" aria-label="Pregunta anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-list">
+        <article class="faq-item">
+          <h3>¿La consulta realmente es sin costo?</h3>
+          <p>
+            Sí. La evaluación es gratuita y sin obligación de contratar ningún tratamiento. Nuestro objetivo es que tengas
+            claridad total sobre tu caso, independientemente de lo que decidas después.
+          </p>
+        </article>
 
-        <a
-        href="https://frontisclinicacapilar.com/"
-        target="_blank"
-        rel="noopener"
-        class="secondary-link website"
-        >
-        Nuestra web
-        </a>
-    </div>
+        <article class="faq-item">
+          <h3>¿Qué diferencia hay entre la consulta online y la presencial?</h3>
+          <p>
+            En ambos casos revisamos en profundidad tu situación y definimos un plan. La consulta presencial permite una
+            exploración directa de tu cuero cabelludo, mientras que la online es ideal si vivís lejos o querés una primera
+            aproximación rápida.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>¿Me van a ofrecer algo que no necesito?</h3>
+          <p>
+            No trabajamos con soluciones genéricas ni con promesas irreales. Si en tu caso un microtrasplante no es la mejor
+            opción, te lo vamos a decir con total transparencia y te propondremos alternativas más adecuadas.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>¿Qué pasa si tengo miedo al resultado “artificial”?</h3>
+          <p>
+            Justamente por eso priorizamos la naturalidad por encima de todo. Definimos línea frontal, densidad y diseño
+            pensando en cómo vas a verte hoy y en los próximos años, para que nunca parezca “hecho” sino propio.
+          </p>
+        </article>
+        <button class="carousel-btn carousel-btn--next" aria-label="Siguiente pregunta">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </section>
+
+    <!-- FOOTER SIMPLE -->
+    <footer class="site-footer">
+      <p class="footer-brand">Frontis · Clínica Capilar Integral</p>
+      <p class="footer-links">
+        También podés conocernos en
+        <a href="https://www.instagram.com/frontisclinicacapilar" target="_blank" rel="noopener">Instagram</a>
+        o en
+        <a href="https://frontisclinicacapilar.com/" target="_blank" rel="noopener">nuestra web oficial</a>.
+      </p>
+    </footer>
+
+    </div>
 
   </main>
 
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script src="assets/js/tracking.js"></script>
+  <script src="assets/js/carousel.js"></script>
 
 </body>
 </html>
