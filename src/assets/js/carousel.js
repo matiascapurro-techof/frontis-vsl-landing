@@ -82,7 +82,4 @@ function initCarousel(selector, itemSelector, gap) {
 document.addEventListener('DOMContentLoaded', function() {
   // Carrusel de testimonios (nuevo bloque)
   initCarousel('.testimonials-carousel-wrapper', '.testimonial-pair', 20);
-  
-  // Carrusel de FAQ
-  initCarousel('.faq-carousel', '.faq-item', 12);
 });

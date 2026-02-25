@@ -151,7 +151,7 @@ body {
   padding-bottom: 62%;
   height: 0;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 12px;
   background: #000;
   border: 1px solid rgba(248, 250, 252, 0.9); /* marco sutil blanquecino */
 }
@@ -161,6 +161,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
+  border-radius: 12px;
 }
 
 /* CTA principal */
@@ -283,6 +284,39 @@ body {
   margin-top: 10px;
   font-size: 13px;
   color: #4b5563;
+}
+
+/* Botón flotante WhatsApp (círculo abajo a la derecha) */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.98);
 }
 
 /* Secciones de venta */
@@ -551,45 +585,74 @@ body {
   color: #4b5563;
 }
 
-.faq-carousel {
-  position: relative;
+/* FAQ acordeón */
+.faq-accordion {
   margin-top: 12px;
-}
-
-.faq-list {
-  margin-top: 0;
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 12px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.faq-list::-webkit-scrollbar {
-  display: none;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(249, 250, 251, 0.9);
 }
 
 .faq-item {
-  background: #f9fafb;
-  border-radius: 12px;
-  padding: 14px 14px 12px;
-  min-width: calc(100% - 12px);
-  scroll-snap-align: start;
-  flex-shrink: 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
-.faq-item h3 {
-  font-size: 14px;
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  text-align: left;
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 4px;
+  color: #0f172a;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease;
 }
 
-.faq-item p {
-  font-size: 13px;
+.faq-question:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.faq-chevron {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(15, 23, 42, 0.6);
+  transition: transform 0.25s ease;
+}
+
+.faq-item.is-open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.is-open .faq-answer {
+  max-height: 500px;
+}
+
+.faq-answer p {
+  font-size: 14px;
   color: #4b5563;
   line-height: 1.6;
+  padding: 0 18px 16px;
+  margin: 0;
 }
 
 /* Tiras de imágenes / placeholders */
@@ -629,15 +692,14 @@ body {
   border-radius: 14px;
   overflow: hidden;
   background: #f9fafb;
-  height: 90px;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
 }
 
 .before-after-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
+  vertical-align: middle;
 }
 
 /* Footer */
@@ -910,33 +972,14 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .faq-carousel {
-    margin-top: 12px;
-  }
-  
-  .faq-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    overflow-x: visible;
-    scroll-snap-type: none;
-  }
-  
-  .faq-item {
-    min-width: auto;
-    flex-shrink: 1;
-  }
-  
-  .faq-carousel .carousel-btn {
-    display: none;
-  }
-
   .image-strip {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
   }
 
-  .before-after-image {
-    aspect-ratio: 1 / 1;
+  .before-after-image img {
+    width: 100%;
+    height: auto;
   }
 
   /* Video limitado */
